@@ -1,5 +1,7 @@
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, ContactShadows } from '@react-three/drei';
+import Cup from './Cup';
 import './App.css';
 
 
@@ -15,6 +17,11 @@ function App() {
         </mesh>
 
         <ContactShadows opacity={1} scale={10} blur={5} far={6} resolution={256} />
+        <OrbitControls />
+
+        <Suspense fallback={null}>
+          <Cup />
+        </Suspense>
         <OrbitControls />
       </Canvas>
 
