@@ -10,7 +10,7 @@ export default function Cup({ ...props }) {
   const { nodes, materials } = useGLTF('./model.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Cup.geometry} material={materials['Material.002']} />
+      <mesh geometry={nodes.Cup.geometry} material={materials['Material.002']} args={[10, 20, 30]} />
     </group>
   )
 }
