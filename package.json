@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-spring/three": "^9.4.4",
     "@react-three/drei": "^8.18.6",
     "@react-three/fiber": "^7.0.26",
     "@testing-library/jest-dom": "^5.14.1",
